@@ -1,15 +1,22 @@
 body{
     text-align: center;
 }
+/*styling grid for hero,score and villian */
 .grid1{
     display: grid;
-    grid-template-columns: 320px 280px 320px;
+    grid-template-columns: 480px 280px 480px;
     justify-content: center;
   }
-  
+
+#align-right{
+    grid-area:4/3/5/4;
+}  
+
+/* styling each grid of heros and villians */
 .grid2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(4, 250px);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid2>div>p{
@@ -41,11 +48,11 @@ body{
     border: 3px solid #E6E6E6;
     width: 140px;
     height: 225px;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow:0 0 1px grey ;
 }
   
 .footer{
-    text-align: right;
-    margin: 450px 30px 0 0;
+    margin-top: 100px ;
     font-size : 18px;
   }
